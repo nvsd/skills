@@ -36,17 +36,16 @@ Work-ordering between tickets ("depends on BWF-123") is not a rule. Ordinary fea
    - `kind`: release/quality gate, human approval, permission/access, privacy/audience, agent autonomy limit, safety/recovery, or other
    - `role`: `primary` if the ticket exists mainly to set or enforce the rule, `inside` if it's one line in a feature ticket
    - `threshold`: any number that hardens it (90%, 3 points, 5 seconds), or blank
-4. **Find conflicts.** Look for pairs of tickets whose rules contradict each other, such as one ticket that resumes on a follow-up and another that says only Continue resumes. Also look for rules that name different owners for the same control.
-5. **Group what you found.**
+4. **Group what you found.**
    - Tickets that **are** the gate, such as eval suites and pass marks that block a release or default. These are the strongest cases of locking things in early.
    - Rules repeated across many tickets with no single owner.
    - Rules that depend on a number nobody has tested yet.
-   - Conflicts.
 
 ## Report
 
-- Write the full table (ticket, kind, rule, primary or inside) to a Markdown file, in the shared project folder if there is one. Include the conflicts and the groups.
-- In chat, lead with the counts: how many rules, how many tickets exist mainly to set a rule, and how many conflicts. List the gate tickets and the top recurring rules, one line each.
+- To find tickets whose rules contradict each other, use the `conflicts` skill.
+- Write the full table (ticket, kind, rule, primary or inside) to a Markdown file, in the shared project folder if there is one. Include the groups.
+- In chat, lead with the counts: how many rules, how many tickets exist mainly to set a rule, List the gate tickets and the top recurring rules, one line each.
 - Offer these choices and change nothing until the person picks one:
   1. Soften the wording: rewrite rules as starting assumptions or open questions to test (recommended by default).
   2. Cancel the tickets that are only gates.
