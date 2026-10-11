@@ -46,11 +46,11 @@ Work-ordering between tickets ("depends on BWF-123") is not a rule. Ordinary fea
 - Write the full table (ticket, kind, rule, primary or inside) to a Markdown file, in the shared project folder if there is one. Include the groups.
 - In chat, lead with the counts: how many rules, and how many tickets exist mainly to set a rule. List the gate tickets and the top recurring rules, one line each.
 - Offer these choices and change nothing until the person picks one:
-  1. Soften the wording: rewrite rules as starting assumptions or open questions to test (recommended by default).
+  1. Remove the rules: delete the gates, pass marks and hard rules from the tickets, keeping the features they were attached to (recommended by default).
   2. Cancel the tickets that are only gates.
   3. Both.
   4. Leave them.
 
-If the person later approves softening, keep each ticket's substance. Turn "must, never, always, blocked unless" into "start with ..., then measure ...", and move pass marks into Open questions, such as "What score should this need once we have data?"
+When removing, don't reword a rule into a softer version or a "starting assumption". Delete it. Delete pass marks and blocking language ("blocks the release", "can't ship until", "only when it scores") rather than moving them to open questions. Keep everything else in the ticket.
 
 To find tickets whose rules contradict each other, use the `conflicts` skill.
