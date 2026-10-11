@@ -43,9 +43,8 @@ Work-ordering between tickets ("depends on BWF-123") is not a rule. Ordinary fea
 
 ## Report
 
-- To find tickets whose rules contradict each other, use the `conflicts` skill.
 - Write the full table (ticket, kind, rule, primary or inside) to a Markdown file, in the shared project folder if there is one. Include the groups.
-- In chat, lead with the counts: how many rules, how many tickets exist mainly to set a rule, List the gate tickets and the top recurring rules, one line each.
+- In chat, lead with the counts: how many rules, and how many tickets exist mainly to set a rule. List the gate tickets and the top recurring rules, one line each.
 - Offer these choices and change nothing until the person picks one:
   1. Soften the wording: rewrite rules as starting assumptions or open questions to test (recommended by default).
   2. Cancel the tickets that are only gates.
@@ -53,3 +52,5 @@ Work-ordering between tickets ("depends on BWF-123") is not a rule. Ordinary fea
   4. Leave them.
 
 If the person later approves softening, keep each ticket's substance. Turn "must, never, always, blocked unless" into "start with ..., then measure ...", and move pass marks into Open questions, such as "What score should this need once we have data?"
+
+To find tickets whose rules contradict each other, use the `conflicts` skill.
